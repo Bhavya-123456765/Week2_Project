@@ -1,0 +1,91 @@
+==================================================
+1. DEVICE CONFIGURATION
+==================================================
+Using device: cpu
+
+==================================================
+2. DATA PREPROCESSING AND LOADING
+==================================================
+Downloading MNIST dataset...
+Training samples: 60000
+Test samples: 10000
+Batch size: 64
+
+==================================================
+3. MODEL ARCHITECTURE DEFINITION
+==================================================
+NeuralNetwork(
+  (flatten): Flatten(start_dim=1, end_dim=-1)
+  (linear_relu_stack): Sequential(
+    (0): Linear(in_features=784, out_features=128, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=128, out_features=10, bias=True)
+  )
+)
+
+Total parameters: 101770
+
+==================================================
+4. TRAINING SETUP
+==================================================
+Loss Function: CrossEntropyLoss()
+Optimizer: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    decoupled_weight_decay: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: None
+    lr: 0.001
+    maximize: False
+    weight_decay: 0
+)
+Learning Rate: 0.001
+
+==================================================
+5. TRAINING LOOP
+==================================================
+Epoch 1/5, Average Loss: 0.3829
+Epoch 2/5, Average Loss: 0.1998
+Epoch 3/5, Average Loss: 0.1429
+Epoch 4/5, Average Loss: 0.1146
+Epoch 5/5, Average Loss: 0.0966
+
+Training complete!
+
+==================================================
+6. VISUALIZE TRAINING PROGRESS
+==================================================
+Final Training Loss: 0.0966
+
+==================================================
+7. MODEL EVALUATION
+==================================================
+Test Accuracy: 97.01%
+Correct predictions: 9701/10000
+
+==================================================
+8. SAVE THE TRAINED MODEL
+==================================================
+Model saved as 'mnist_mlp.pth'
+
+==================================================
+9. PERFORMANCE SUMMARY
+==================================================
+MODEL ARCHITECTURE:
+  - Input: 784 (28x28 pixels, flattened)
+  - Hidden Layer: 128 neurons (ReLU activation)
+  - Output Layer: 10 neurons (digits 0-9)
+
+TRAINING PARAMETERS:
+  - Optimizer: Adam (learning rate = 0.001)
+  - Loss Function: CrossEntropyLoss
+  - Batch Size: 64
+  - Epochs: 5
+
+PERFORMANCE:
+  - Final Training Loss: 0.0966
+  - Test Accuracy: 97.01%

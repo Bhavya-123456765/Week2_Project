@@ -1,0 +1,53 @@
+============================================================
+WEEK 2 TASK - HYPERPARAMETER TUNING EXPERIMENTS
+============================================================
+
+📥 Loading MNIST dataset...
+Training samples: 60000
+Test samples: 10000
+
+============================================================
+📊 EXPERIMENT 1: Testing Different Epochs
+============================================================
+
+🔬 Training with 3 epochs...
+   ✅ Test Accuracy: 95.97%
+   ⏱️  Time: 588.66 seconds
+
+🔬 Training with 5 epochs...
+   ✅ Test Accuracy: 97.08%
+   ⏱️  Time: 868.72 seconds
+
+🔬 Training with 10 epochs...
+   ✅ Test Accuracy: 97.05%
+   ⏱️  Time: 1807.63 seconds
+
+============================================================
+📊 EXPERIMENT 2: Testing Different Learning Rates
+============================================================
+
+🔬 Training with learning rate: 0.01
+   ✅ Test Accuracy: 92.22%
+
+🔬 Training with learning rate: 0.001
+   ✅ Test Accuracy: 96.65%
+
+🔬 Training with learning rate: 0.0001
+   ✅ Test Accuracy: 93.58%
+
+============================================================
+📈 SUMMARY OF RESULTS
+============================================================
+
+🏆 Epoch Comparison:
+--------------------------------------------------
+Epochs     Accuracy     Final Loss   Time (s)  
+--------------------------------------------------
+3          95.97        0.1368       588.66    
+5          97.08        0.0955       868.72    
+10         97.05        0.0628       1807.63   
+
+🏆 Learning Rate Comparison:
+----------------------------------------
+Learning Rate   Accuracy    
+----------------------------------------
